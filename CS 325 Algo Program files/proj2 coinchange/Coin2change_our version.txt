@@ -1,0 +1,63 @@
+
+#### Brute Force or Divide and Conquer ####
+
+Coin2.txt Data
+[1, 2, 5]
+[10]
+[1, 3, 7, 26]
+[22]
+[1, 3, 7, 30]
+[29]
+
+Coin2change.txt
+[0, 0, 2]
+2
+Execution time 0.000075 sec
+[1, 0, 3, 0]
+4
+Execution time 0.002976 sec
+[1, 0, 4, 0]
+5
+Execution time 0.053522 sec
+
+#### Greedy Algorithm ####
+
+Coin2.txt Data
+[1, 2, 5]
+[10]
+[1, 3, 7, 26]
+[22]
+[1, 3, 7, 30]
+[29]
+
+Coin2change.txt
+[0,0,2]
+32769
+Execution time 0.000001 sec
+[1,0,3,0]
+32771
+Execution time 0.000001 sec
+[1,0,4,0]
+32772
+Execution time 0.000001 sec
+
+#### Dynamic Programming ####
+
+Coin2.txt Data
+[1, 2, 5]
+[10]
+[1, 3, 7, 26]
+[22]
+[1, 3, 7, 30]
+[29]
+
+Coin2change.txt
+[0, 0, 2]
+[2]
+Execution time 0.000001 sec
+[1, 0, 3, 0]
+[4]
+Execution time 0.000001 sec
+[1, 0, 4, 0]
+[5]
+Execution time 0.000002 sec

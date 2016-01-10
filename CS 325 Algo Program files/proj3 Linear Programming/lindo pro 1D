@@ -1,0 +1,46 @@
+
+Objective: Take the minumum sum of transportation from plant-1 + plant-2 + ... + plant-n to Wearhouse 1 + plant-1 + plant-2 + ...+ plant-n to Wearhouse 2 + ... + plant-1 + plant-2 + ... + plant-n to Wearhouse n
+call ST
+
+constraints:
+limit by sum of plant-1 to Wearhouse-1 + ... + plant1 to Wearhouse-n output limit if possible to ship from p -> w
+limit by sum of plant-2 to Wearhouse-1 + ... + plant2 to Wearhouse-n output limit if possible to ship from p -> w
+limit by sum of plant-n to Wearhouse-1 + ... + plantn to Wearhouse-n output limit if possible to ship from p -> w
+
+limit by sum of plant-1 to Wearhouse-1 + ... + plant-n to Wearhouse-1 + plant-1 to Wearhouse-2 + ... + plant-n to Wearhouse-2 + plant-1 to Wearhouse-n + ... + plant-n to Wearhouse-n >= total demand
+
+limit by sum of wearhouse-1 to retail-1 + ... + wearhouse-n to reatail-1 + wearhouse-1 to retail-2 + ... + wearhouse-n to reatail-2 + ... + wearhouse-1 to retail-n + ... + wearhouse-n to reatail-n >= total demand
+
+limit by sum of wearhouse-1 to retail-1 + ... + wearhouse-n to retail-1 if possible to ship >= demand for retail-1
+limit by sum of wearhouse-1 to retail-2 + ... + wearhouse-n to retail-2 if possible to ship >= demand for retail-2
+limit by sum of wearhouse-1 to retail-n + ... + wearhouse-n to retail-n if possible to ship >= demand for retail-n
+
+if possible to ship from plant to wearhouse
+limit by plant-1 to wearhouse-1 >= 0
+limit by plant-1 to wearhouse-2 >= 0
+limit by plant-1 to wearhouse-n >= 0
+
+limit by plant-2 to wearhouse-1 >= 0
+limit by plant-2 to wearhouse-2 >= 0
+limit by plant-2 to wearhouse-n >= 0
+
+limit by plant-n to wearhouse-1 >= 0
+limit by plant-n to wearhouse-2 >= 0
+limit by plant-n to wearhouse-n >= 0
+
+if possible to ship from wearhouse to retail
+limit by wearhouse-1 to retail-1 >= 0
+limit by wearhouse-1 to retail-2 >= 0
+limit by wearhouse-1 to retail-n >= 0
+
+limit by wearhouse-2 to retail-1 >= 0
+limit by wearhouse-2 to retail-2 >= 0
+limit by wearhouse-2 to retail-n >= 0
+
+limit by wearhouse-n to retail-1 >= 0
+limit by wearhouse-n to retail-2 >= 0
+limit by wearhouse-n to retail-n >= 0
+call end
+
+
+

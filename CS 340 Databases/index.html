@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- main gradeschool database access page -login and link to register -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Login</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Welcome to X Grade School</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+      </div>
+    </div>
+  </nav>
+  <div class = "container">
+    <div class="row" style = "margin: 75px 0">
+      <div class ="col-sm-6">
+      <h3> Login</h3><br>
+       <form action="login.php" method="post">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+              <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-group">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-star"></span></span>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="">
+            </div>
+            <button id = "login" class ="btn btn-primary" style = "margin: 10px 0">Login</button>
+            <div id = "LoginFeedback" ></div>
+          </div>
+       </form>
+      </div>
+      <div class ="col-sm-6">
+        <form action= "register.html" method="post">
+        <h3> Register</h3><br>
+        <p>           Or please register here -> 
+          <button id ="register" class ="btn btn-primary"  style = "margin: 10px 0">Register</button>
+          <div id ="RegistrationFeedback"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./Signin Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

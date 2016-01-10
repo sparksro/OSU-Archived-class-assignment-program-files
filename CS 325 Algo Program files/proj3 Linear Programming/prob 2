@@ -1,0 +1,25 @@
+Part A
+// objective - minimize the callories
+MIN 21 T11 + 16 L21 + 40 S31 + 41 C41 + 585 SS51 + 120 ST61 + 164 CP71 + 884 O81
+ST
+
+//protein
+0.85 T12 + 1.62 L22 + 2.86 S32 + 0.93 C42 + 23.4 SS52 + 16.00 ST62 + 9.00 CP72 > 15
+
+//fat
+0.33 T13 + 0.20 L23 + 0.39 S33 + 0.24 C43 + 48.7 SS53 + 5.00 ST63 + 2.6 CP73 + 100.00 O83 > 2
+0.33 T13 + 0.20 L23 + 0.39 S33 + 0.24 C43 + 48.7 SS53 + 5.00 ST63 + 2.6 CP73 + 100.00 O83 < 8
+
+//Carbs
+4.64 T14 + 2.37 L24 + 3.63 S34 + 9.58 C44 + 15.00 SS54 + 3.00 ST64 + 27.0 CP74 > 4
+
+//Sodium
+9.00 T15 + 28.00 L25 + 65.00 S35 + 69.00 C45 + 3.80 SS55 + 20.00 ST65 + 78.00 CP75 < 200
+
+//Leafy greens - 40% by mass comprised of Lettuce and Spinach 
+100 L + 100 S / 100 T + 100 L + 100 S + 100 C + 100 SS + 100 ST + 100 CP + 100 O  > 0.40
+- This gets to the idea but I am not sure if it will work as is
+
+
+Part B -replace objective 
+MIN 1.00 T16 + 0.75 L26 + 0.50 S36 + 0.50 C46 + 0.45 SS56 + 2.15 ST66 + 0.95 CP76 + 2.00 O86 

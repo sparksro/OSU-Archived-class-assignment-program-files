@@ -1,0 +1,1 @@
+<font color='red'>An error has occured. Your activation email was not sent.</font>

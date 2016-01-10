@@ -1,0 +1,1 @@
+<font color='red'>You must re-enter your password to register.</font>

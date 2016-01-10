@@ -1,0 +1,113 @@
+/*** Style for layout.html  Table ***/
+
+#mystery-table {
+  font: 100% sans-serif;
+  font-weight: normal;
+  background-color: #a3ff75;
+  border-spacing: 3px;
+  border-collapse: separate;
+  empty-cells: show;
+  border: 2px solid #777;
+}
+
+#mystery-table > caption {
+  text-align: left;
+  font-weight: bold;
+  font-size: 100%;
+  border-bottom: .2em solid #ff6600;
+  margin-bottom: .3em;
+}
+
+
+/* shared rules */
+
+#mystery-table > th{
+  font-weight:normal;
+  text-align: right;
+  padding-right: 4px;
+  color: #87CEFA;
+}
+
+#mystery-table > td{
+  text-align: right;
+  padding-left: .5em;
+}
+
+/* fix size of superscript */
+#mystery-table sup {
+  font-size: 75%;
+}
+
+
+#mystery-table td {
+  background-color:	#87CEFA;
+  padding:.5em .5em .5em 3em;
+}
+
+
+/* footer */
+#mystery-table tfoot {
+  font-weight: bold;
+}
+
+#mystery-table tfoot th {
+  color: blue;
+}
+
+#lightblue {
+	background-color:lightblue;
+	height:648px;
+	width:850px;
+	margin:20px 5% 15% 10%;
+	display:block
+}
+
+#red {
+	background-color:red;
+	height:100px;
+	width:25%;
+	margin:20px 00% 00px 5%;
+	display:inline-block;
+}
+  
+#orange {
+	background-color:orange;
+	height:100px;
+	width:45%;
+	margin:20px 00% 00px 9.5%;
+	display:inline-block;
+}
+
+#yellow {
+	background-color:Yellow;
+	height:200px;
+	width:213px;
+	margin:70px 00% 00px 46px;
+	display:inline-block;
+  }
+
+#green {
+	
+	background-color:lightgreen;
+	height:200px;
+	width:45%;
+	margin:70px 00% 00px 78px;
+	display:inline-block;
+	} 
+	 
+#blue {
+	background-color:Blue;
+	height:200px;
+	width:25%;
+	margin:57px 5% 00% 5.5%;
+	display:inline-block;
+	}  
+
+#indigo {
+	background-color:Indigo;
+	height:200px;
+	width:45.5%;
+	margin:57px 5% 00% 4%;
+	display:inline-block;
+	}
+  

@@ -1,0 +1,10 @@
+
+
+files in ---> assignment2/assignment2/
+
+assignment2
+
+This assignment is complete. I think I hit every thing on the list and then some. You probably allready have seen up above but this weeks assignment is in a double assignment2/assignment2/ folder. Some how this happened from my local side when I pushed back to github. The origninal file, a read me file, was cloned from a single assignment2/ folder. I placed the .htmland .css that single folder on my hard drive but when I pushed back to the repo I or git created an extra folder some how.
+
+Code sources: Some of my code in this weeks assignment was patterned after code here: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started Especially the html and css code for the table. Other code was patterned from lectures, namely the forms code. All of the patterened example code was highly adapted and changed to make it what I needed.
+ 

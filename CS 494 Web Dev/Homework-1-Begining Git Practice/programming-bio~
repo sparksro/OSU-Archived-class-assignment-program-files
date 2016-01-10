@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+ As well as playing arround with the online version of github I have also loaded a local version on my laptop.  I 
+ sucessfully cloned my stuff there just for practice and was able to then push changes back to the origin 
+ which was at the time a test.txt file and then later with Homework1 clone v.1.
+ <combined here>
+In this bio I am not going to realy talk about me so much as the the last homwork 1 clone v.1.  In that version I had 
+some initial trouble with the branch merge.  I think it was because I copy and pasted from my text edditor and because 
+I had comflicting text on the same linew.  This time I have left lines 1-3 blank in reserve for the master branch.  Also I
+am making sure the text is on multiple lines instead of a a bunch of wraped text on one or two lines.  
+Notes: 
+
+-As of this update still having problmes with merge wanting to delete text.  The extra blank lines did not work nieher 
+did eliminating them. This is a tryal to see if an updatea and commit to the branch version after the master will do any 
+thing.  So far a google search is not turning up a solution.  
+-It seems from reading on line sorces is the reason for the merge conflicts is so you can manually edit the mergeing files
+I thought of this early on but thought there would be an auto solution.  I thought by seperating by lines that it would
+be smart enought to figure it out but maybe  not.  On the next merge I will have manually combined the files.
+
+-As I learn new things the notes are going here into the branch version.  Reading on Stack overflow the merge conflict is 
+caused by editing the same file in to different places and does require a manual merge.  Encountered another problem
+with with a local clone to my HD it picked up the master branch but not the programing-bio branch.  Currently researching
+this.  local: git branch -a will show all the branches http://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-with-git
+    git checkout -b programing-bio  switched so I could see it but it put it changed Head location locally to progrmming-bio
+    I then did a git fetch this put the programming-bio files on my HD but repleaced the master branch ones.  This is
+    some what out of the scope of this assignment and I will probably continue to solve this at a later time.
+    I can fix this with manual edit/ cut and paist for now.
+=======
+
+>>>>>>> origin/programming-bio

@@ -1,0 +1,5 @@
+<font color='blue'>You have been registered.</font>
+<font color='blue'>Please check your email for an activation link</font> 
+<font color='blue'>and allow several minutes to receieve the email.</font>
+<font color='red'>Note: Keep track of your password! Its not stored here.</font>
+<font color='red'>If you loose it we can't recover it for you.'</font>

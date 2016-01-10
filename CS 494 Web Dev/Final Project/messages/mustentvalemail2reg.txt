@@ -1,0 +1,1 @@
+<font color='red'>You must enter a valid email to register.</font>

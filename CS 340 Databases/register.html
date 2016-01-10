@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- regiser database access page -user enters data on this page. -->
+<html lang="en">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Login/Registration</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">X Grade School</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+      </div>
+    </div>
+  </nav>
+   <div class = "container">
+    <div class="row" style = "margin: 75px 0">
+      <div class ="col-sm-6">
+          <div class="form-group">
+            <h3> Instructions:</h3>
+            Parents: Please register your self(s) first!  We need your user info to be in the system before your students.
+            Example:  Register parent 1 and then hit the next button.  Register parent 2 and then hit the next
+            button again then repeat for each child.  <bold>Make sure to change the title drop down at the 
+            top as apropriate.</bold>  Only hit the done button when completly finished 
+            registering all people.<br> <br>  Notes: User names must be unique.  If you get an error try another user name.<br><br>
+            Important! -Make sure you keep your password in a safe place.  It is not stored in the data base and can not be recoverd.  If you loose it the only option is reseting your account.
+            All feilds are required.<br>
+            Passwords must be longer than 6 charicters.
+          </div>
+          <br>Only push done after the last person or if completly finished registering. You must push next after each person or the info will not go into the system. <br>
+          <form action= "logout.php" method="post">
+            <button style="background-color:red" name ="register" id ="register" class ="btn btn-primary"  style = "margin: 10px 0" value="2"> Done</button>
+          </form> 
+      </div>
+      <div class ="col-sm-6">
+        <form action= "register.php" method="post">
+          <div class="form-group">
+           <label for="title">Title</label>
+              <select class="form-control" id = "title" name="title" required="">
+                <option selected disabled > -- Select type -- </option>
+                <option value="parent">Parent</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div>
+          <!--input registration info-->
+          <div class="form-group">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name ="username"id="username" placeholder="Username" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="birthday">Birthday</label>
+            <div class="input-group">
+              <input type="date" class="form-control" name="birthday" id="birthday" placeholder="Birthday" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="address" id="address" placeholder="Address" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="city" id="city" placeholder="City" required="">
+            </div>
+          </div>
+          <div class="form-group">
+           <label for="state">State</label>
+            <select class="form-control" id = "state" name="state" size="1" required="">
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+            </div>
+          <div class="form-group">
+            <label for="address">Zip</label>
+            <div class="input-group">
+              <input type="number" class="form-control" name="zip" id="zip" placeholder="Zip Code" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Email</label>
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Phone Number</label>
+            <div class="input-group">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number" required="">
+            </div>
+          </div>
+          Please push next after entering each persons info.<br>
+          <button style="background-color:green" name ="register" id ="register" class ="btn btn-primary"  style = "margin: 10px 0" value="1"> Next</button>
+          <div id ="RegistrationFeedback"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="./Signin Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

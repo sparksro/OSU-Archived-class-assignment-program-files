@@ -1,0 +1,2 @@
+<font color='red'>An error has occured. Your account was not created.</font>
+
